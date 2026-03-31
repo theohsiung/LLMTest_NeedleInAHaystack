@@ -1,0 +1,32 @@
+# Ignore PNG images
+*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Results
+results/
+*.jsonl
+
+# Context files
+contexts/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
