@@ -71,6 +71,7 @@ class LocalModel(ModelProvider):
         response = await self.model.chat.completions.create(
             model=self.model_name,
             messages=prompt,
+            extra_body={"chat_template_kwargs": {"enable_thinking": False}},
             **self.model_kwargs
         )
         return response.choices[0].message.content
